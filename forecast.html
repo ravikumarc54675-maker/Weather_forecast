@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyPulse - Forecast</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="app-header">
+  <h1>SkyPulse <span>Forecast</span></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="forecast.html">Forecast</a>
+    <a href="compare.html">Compare</a>
+    <a href="manage.html">Manage Cities</a>
+  </nav>
+</header>
+
+<main class="dashboard-main">
+  <div id="day-tabs" class="day-tabs"></div>
+  <section class="weather-card" id="forecast-card"></section>
+  <div class="timer-row">
+    <span>Auto-refresh in: </span>
+    <span id="refresh-timer">60</span>s
+  </div>
+  <p id="error-msg" class="error-msg"></p>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/forecast.js"></script>
+</body>
+</html>

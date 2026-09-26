@@ -1,0 +1,30 @@
+.pin-gate {
+  max-width: 320px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.pin-gate input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+}
+
+.add-city-row { display: flex; gap: 10px; margin-bottom: 16px; }
+
+.manage-table button {
+  margin-right: 4px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #334155;
+  color: #f8fafc;
+}
+
+.manage-table button:hover { background: #475569; }

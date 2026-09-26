@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyPulse - Manage Cities</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/manage.css">
+</head>
+<body>
+<header class="app-header">
+  <h1>SkyPulse <span>Manage</span></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="forecast.html">Forecast</a>
+    <a href="compare.html">Compare</a>
+    <a href="manage.html">Manage Cities</a>
+  </nav>
+</header>
+
+<main class="dashboard-main">
+  <section id="pin-gate" class="pin-gate">
+    <label for="pin-input">Enter Manager PIN</label>
+    <input type="password" id="pin-input">
+    <button id="pin-submit" class="btn btn-primary">Unlock</button>
+    <p id="pin-error" class="error-msg"></p>
+  </section>
+
+  <section id="manage-panel" class="manage-panel" hidden>
+    <div class="add-city-row">
+      <input type="text" id="new-city-input" placeholder="Add a city...">
+      <button id="add-city-btn" class="btn btn-primary">Add</button>
+    </div>
+    <table id="city-table" class="manage-table"></table>
+  </section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/manage.js"></script>
+</body>
+</html>

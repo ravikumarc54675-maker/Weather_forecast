@@ -1,0 +1,111 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #1e293b;
+}
+
+.app-header nav a {
+  color: #94a3b8;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.app-header nav a:hover { color: #38bdf8; }
+
+.dashboard-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.search-bar { display: flex; gap: 10px; margin-bottom: 12px; }
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f8fafc;
+}
+
+.btn {
+  background: #334155;
+  color: #f8fafc;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary { background: #38bdf8; color: #0f172a; }
+
+.error-msg { color: #ef4444; font-size: 0.9rem; min-height: 20px; }
+
+.weather-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.metric-primary {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #38bdf8;
+  margin: 8px 0;
+}
+
+.saved-chips #city-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.chip {
+  background: #334155;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.day-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+
+.timer-row { margin-top: 12px; color: #94a3b8; }
+
+.compare-table, .manage-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.compare-table th, .compare-table td,
+.manage-table th, .manage-table td {
+  border: 1px solid #334155;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.summary-box {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 16px;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .app-header { flex-direction: column; gap: 8px; }
+  .search-bar { flex-direction: column; }
+  .dashboard-main { padding: 16px; }
+}
